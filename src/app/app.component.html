@@ -1,0 +1,19 @@
+{{today | date: "dd/MMM/yyyy hh:mm a"}}
+<h1 myHighlight>Welcome to {{title}}!</h1>
+
+<h2>Capitalize first letter w/pipe</h2>
+<label name="fName"> First Name:
+  <input [(ngModel)]="firstName" type="text" />
+</label>
+<br/>
+<label name="fName"> First Name (Capitalized)
+    {{firstName | capitalize}}
+</label>
+<br/>
+<br/>
+<label name="fName"> Employee Name (Capitalized)
+  {{employee | employeeName}}
+</label>
+
+<router-outlet></router-outlet>
+
