@@ -15,5 +15,20 @@
   {{employee | employeeName}}
 </label>
 
+<div>
+
+  <div *ngIf="profile else noProfileFound">
+    Name: {{profile.name}}
+  </div>
+  <ng-template #noProfileFound>
+    No Profile Found with Ng-Templage
+  </ng-template>
+  
+</div>
+
+<div>
+    <a routerLink='/stocks'>STOCKS</a>
+</div>
+
 <router-outlet></router-outlet>
 

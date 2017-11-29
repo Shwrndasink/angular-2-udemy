@@ -1,9 +1,9 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appStockDirective]'
+  selector: '[appBonds]'
 })
-export class StockDirective {
+export class BondsDirective {
 
   constructor() { }
 
